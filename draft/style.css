@@ -103,7 +103,7 @@ p{margin:0 0 14px}
 .rope-fg{stroke:var(--gold);stroke-width:6;stroke-dasharray:1;stroke-dashoffset:1}
 .waypoints{position:absolute;inset:0}
 .wp{position:absolute;width:38%;transform:translate(-50%,-50%);text-align:center}
-.wp-1{left:22%;top:22%}.wp-2{left:78%;top:42.7%}.wp-3{left:22%;top:64%}.wp-4{left:78%;top:85.3%}.wp-5{left:50%;top:99%}
+.wp-1{left:22%;top:18.3%}.wp-2{left:78%;top:35.6%}.wp-3{left:22%;top:53.3%}.wp-4{left:78%;top:71.1%}.wp-5{left:50%;top:96%}
 .win{margin:0 auto 14px;overflow:hidden;background:#000}
 .win img,.win video{width:100%;height:100%;object-fit:cover}
 .win.round{width:66%;aspect-ratio:1;border-radius:50%;border:7px solid var(--bronze);outline:4px solid var(--iron2);box-shadow:0 0 0 6px rgba(214,163,62,.45),0 14px 30px rgba(0,0,0,.55)}
