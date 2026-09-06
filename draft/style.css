@@ -40,6 +40,7 @@ p{margin:0 0 14px}
 .menu a{font-weight:600;font-size:15px;color:var(--bone2);padding:4px 0;border-bottom:2px solid transparent}
 .menu a:hover{color:var(--gold2);border-bottom-color:var(--gold)}
 .menu .btn{padding:8px 16px;font-size:14px;margin-left:8px;box-shadow:4px 4px 0 #03090a;border-bottom:2px solid #8a6420}
+.menu .btn-gold,.menu .btn-gold:hover{color:#1a1408}
 .burger{display:none;width:44px;height:44px;background:none;border:0;padding:10px;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
 .burger span{display:block;height:3px;background:var(--bone);transition:.25s}
 
@@ -253,6 +254,7 @@ p{margin:0 0 14px}
   .sec-head{grid-template-columns:1fr}
   .roman{grid-row:auto}
   .sec-head p{grid-column:1}
+  .wp p br,.sec-head p br,.note br{display:none}
   .temple{padding:80px 0 70px}
   .pillars{grid-template-columns:repeat(2,1fr);gap:18px}
   .shaft{height:200px}
