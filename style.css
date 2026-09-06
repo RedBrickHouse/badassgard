@@ -202,8 +202,10 @@ p{margin:0 0 14px}
 .foot{border-top:1px solid rgba(214,163,62,.3);padding:32px 0 40px}
 .partners{display:flex;align-items:center;justify-content:center;gap:26px;padding:0 32px 30px;margin-bottom:30px;border-bottom:1px solid rgba(214,163,62,.2)}
 .p-logo{height:40px;width:auto}
-.p-sep{width:1px;height:34px;background:rgba(229,217,191,.3)}
+.p-sep{width:1px;height:56px;background:rgba(229,217,191,.3)}
 .p-dev-logo{height:48px;width:auto;border-radius:6px}
+.partner{display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none}
+.p-cap{font-family:var(--sans);font-size:11.5px;letter-spacing:0;color:var(--muted);white-space:nowrap}
 .p-dev{font-family:var(--num);font-weight:700;font-size:17px;letter-spacing:.22em;color:var(--bone)}
 @media (max-width:600px){.partners{gap:18px;padding:0 20px 24px}.p-logo{height:32px}.p-dev{font-size:14px;letter-spacing:.16em}.p-dev-logo{height:40px}}
 .foot-in{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
@@ -280,3 +282,5 @@ p{margin:0 0 14px}
   .foot-links{margin-left:0;flex-wrap:wrap}
 }
 @media (max-width:560px){.rack{grid-template-columns:1fr}.spec dl{grid-template-columns:1fr}.pillars{gap:12px}.shaft b{font-size:20px}}
+
+@media (max-width:600px){.partners{flex-direction:column;gap:14px}.p-sep{width:64px;height:1px}.p-cap{white-space:normal;text-align:center}}
