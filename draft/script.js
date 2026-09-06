@@ -1,13 +1,15 @@
 (function(){
   var top=document.getElementById('top'), burger=top.querySelector('.burger'), menu=document.getElementById('menu');
+  function onScroll(){top.classList.toggle('scrolled',scrollY>30);}
+  onScroll(); addEventListener('scroll',onScroll,{passive:true});
   burger.addEventListener('click',function(){var open=top.classList.toggle('open');burger.setAttribute('aria-expanded',open);});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
-  var links=menu.querySelectorAll('[data-spy]'), secs=[];
-  links.forEach(function(a){var s=document.getElementById(a.dataset.spy); if(s) secs.push([s,a]);});
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.remove('active')});
-      secs.forEach(function(p){if(p[0]===x.target)p[1].classList.add('active');});}});},{rootMargin:'-35% 0px -55% 0px'});
-    secs.forEach(function(p){io.observe(p[0]);});
+  var rail=document.getElementById('rail');
+  if(rail && 'IntersectionObserver' in window){
+    var links=rail.querySelectorAll('[data-r]'), map={};
+    links.forEach(function(a){var s=document.getElementById(a.dataset.r); if(s) map[a.dataset.r]=a;});
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.remove('on')}); var a=map[x.target.id]; if(a) a.classList.add('on');}});},{rootMargin:'-35% 0px -55% 0px'});
+    Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});
   }
 })();
 (function(){
