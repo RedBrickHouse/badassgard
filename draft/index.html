@@ -6,15 +6,15 @@
 <title>BADASSGARD | 배드애스가르드 공식 사이트</title>
 <meta name="description" content="바이킹이 쏜다, 그것도 샷건을?! 북유럽 신화 세계에서 신들의 축복과 오파츠를 조합해 화력을 키우는 3인칭 로그라이트 액션 슈터. 혼자 또는 최대 4인 온라인 협동으로 즐길 수 있으며, 2027년 Steam 출시 예정.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#1e1c1a">
+<meta name="theme-color" content="#061517">
 <meta property="og:title" content="BADASSGARD | 배드애스가르드">
-<meta property="og:description" content="북유럽 신화 세계의 최대 4인 협동 로그라이트 액션 슈터. 2027년 Steam 출시 예정.">
+<meta property="og:description" content="신들의 축복. 바이킹의 화력. 최대 4인 협동 로그라이트 액션 슈터, 2027년 Steam 출시 예정.">
 <meta property="og:image" content="https://badassgard.com/img/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://badassgard.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Noto+Serif+KR:wght@600;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800;900&family=Black+Han+Sans&family=Cinzel:wght@700;800&family=Uncial+Antiqua&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,139 +23,182 @@
   <defs>
     <symbol id="ic-steam" viewBox="0 0 24 24"><path d="M11.98 2C6.75 2 2.46 6.02 2.04 11.14l5.34 2.21a2.8 2.8 0 0 1 1.6-.5h.16l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.39 2.42v.13a2.83 2.83 0 0 1-5.6.53L2.4 14.62A10 10 0 1 0 11.98 2Zm-5.7 15.1-1.22-.5a2.12 2.12 0 0 0 3.9.1 2.12 2.12 0 0 0-1.14-2.77l-1.27-.52a1.7 1.7 0 0 1 1.31-.07 1.7 1.7 0 0 1 .95 2.21 1.7 1.7 0 0 1-2.53 1.55Zm9.01-5.42a2.51 2.51 0 1 1 0-5.02 2.51 2.51 0 0 1 0 5.02Zm0-4.4a1.89 1.89 0 1 0 0 3.77 1.89 1.89 0 0 0 0-3.77Z"/></symbol>
     <symbol id="ic-discord" viewBox="0 0 24 24"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a18 18 0 0 1 4.4 2.2 15.6 15.6 0 0 0-15.2 0A18 18 0 0 1 8.8 3.4L8.6 3a19.8 19.8 0 0 0-4.9 1.4C.6 9 0 13.5.3 17.9A20 20 0 0 0 6.3 21l1.3-2.1a12.7 12.7 0 0 1-2.1-1l.5-.4a14.2 14.2 0 0 0 12 0l.5.4a12.7 12.7 0 0 1-2.1 1l1.3 2.1a20 20 0 0 0 6-3.1c.4-5.2-.7-9.6-3.4-13.5ZM8.5 15.2c-1.2 0-2.1-1.1-2.1-2.4s1-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Zm7 0c-1.2 0-2.1-1.1-2.1-2.4s1-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Z"/></symbol>
-    <!-- Elder Futhark runes as strokes -->
-    <symbol id="ru-f" viewBox="0 0 24 32"><path d="M7 30V2 M7 7l11-4 M7 14l11-4"/></symbol>
-    <symbol id="ru-u" viewBox="0 0 24 32"><path d="M5 30V2l14 8v20"/></symbol>
-    <symbol id="ru-th" viewBox="0 0 24 32"><path d="M7 30V2 M7 8l11 7-11 7"/></symbol>
-    <symbol id="ru-a" viewBox="0 0 24 32"><path d="M7 30V2 M7 4l11 7 M7 12l11 7"/></symbol>
-    <symbol id="ru-r" viewBox="0 0 24 32"><path d="M6 30V2l12 7-12 7 12 14"/></symbol>
-    <symbol id="ru-k" viewBox="0 0 24 32"><path d="M18 4 6 16l12 12"/></symbol>
-    <symbol id="ru-g" viewBox="0 0 24 32"><path d="M4 8l16 16 M20 8 4 24"/></symbol>
-    <symbol id="ru-w" viewBox="0 0 24 32"><path d="M6 30V2l12 7-12 7"/></symbol>
+
+    <!-- Round shield: low-poly flat shading (base / shade / edge) -->
+    <symbol id="shield" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="98" fill="#1e2a2d"/>
+      <circle cx="100" cy="100" r="90" fill="#16736f"/>
+      <circle cx="100" cy="100" r="82" fill="#0b4548"/>
+      <polygon points="100,100 100,18 158,42" fill="#0e5054"/>
+      <polygon points="100,100 158,42 182,100" fill="#0b4548"/>
+      <polygon points="100,100 182,100 158,158" fill="#083436"/>
+      <polygon points="100,100 158,158 100,182" fill="#072c2e"/>
+      <polygon points="100,100 100,182 42,158" fill="#083436"/>
+      <polygon points="100,100 42,158 18,100" fill="#0b4548"/>
+      <polygon points="100,100 18,100 42,42" fill="#0e5054"/>
+      <polygon points="100,100 42,42 100,18" fill="#115a5c"/>
+      <circle cx="100" cy="100" r="84" fill="none" stroke="#d6a33e" stroke-width="2" opacity=".7"/>
+      <g fill="#e5d9bf" opacity=".55"><circle cx="100" cy="12" r="3"/><circle cx="188" cy="100" r="3"/><circle cx="100" cy="188" r="3"/><circle cx="12" cy="100" r="3"/><circle cx="162" cy="38" r="3"/><circle cx="162" cy="162" r="3"/><circle cx="38" cy="162" r="3"/><circle cx="38" cy="38" r="3"/></g>
+      <circle cx="100" cy="100" r="28" fill="#29373a"/>
+      <polygon points="100,72 122,84 118,110 96,124 78,108 82,82" fill="#3b4a4e"/>
+      <polygon points="100,72 122,84 108,98 90,96" fill="#4d5c60"/>
+      <circle cx="100" cy="100" r="6" fill="#1e2a2d"/>
+    </symbol>
+
+    <!-- Horned helmet silhouette -->
+    <symbol id="helmet" viewBox="0 0 320 240">
+      <polygon points="60,200 40,120 70,60 120,30 200,30 250,60 280,120 260,200" fill="#29373a"/>
+      <polygon points="60,200 40,120 70,60 120,30 160,30 160,200" fill="#3b4a4e"/>
+      <polygon points="160,30 200,30 250,60 280,120 260,200 160,200" fill="#1e2a2d"/>
+      <rect x="40" y="118" width="240" height="18" fill="#d6a33e" opacity=".9"/>
+      <rect x="146" y="118" width="28" height="90" fill="#1e2a2d"/>
+      <polygon points="40,130 10,80 0,20 30,40 50,10 70,60" fill="#e5d9bf"/>
+      <polygon points="40,130 10,80 0,20 30,40 40,80" fill="#c9bda3"/>
+      <polygon points="280,130 310,80 320,20 290,40 270,10 250,60" fill="#e5d9bf"/>
+      <polygon points="280,130 310,80 320,20 290,40 280,80" fill="#c9bda3"/>
+    </symbol>
+
+    <!-- Bearded axe (horizontal) -->
+    <symbol id="axe" viewBox="0 0 420 120">
+      <polygon points="0,64 380,52 380,68 0,76" fill="#5a3e2b"/>
+      <polygon points="0,64 380,52 380,60 0,70" fill="#6e4d36"/>
+      <polygon points="330,10 420,20 410,70 360,110 330,100 340,60" fill="#29373a"/>
+      <polygon points="330,10 420,20 400,40 340,50" fill="#3b4a4e"/>
+      <polygon points="420,20 410,70 360,110 385,60" fill="#e5d9bf" opacity=".85"/>
+    </symbol>
+
+    <!-- Pump shotgun (horizontal) -->
+    <symbol id="shotgun" viewBox="0 0 420 110">
+      <polygon points="0,40 70,30 90,50 60,100 10,100" fill="#5a3e2b"/>
+      <polygon points="0,40 70,30 60,45 10,60" fill="#6e4d36"/>
+      <polygon points="70,30 200,26 200,64 90,64" fill="#29373a"/>
+      <polygon points="70,30 200,26 200,40 80,42" fill="#3b4a4e"/>
+      <polygon points="200,30 420,32 420,48 200,50" fill="#1e2a2d"/>
+      <polygon points="200,30 420,32 420,38 200,38" fill="#3b4a4e"/>
+      <polygon points="230,50 320,50 320,72 230,72" fill="#29373a"/>
+      <polygon points="120,64 150,64 140,90 110,90" fill="#1e2a2d"/>
+      <polygon points="405,30 420,26 420,52 405,50" fill="#d6a33e"/>
+    </symbol>
+
+    <!-- Raven -->
+    <symbol id="raven" viewBox="0 0 140 80">
+      <polygon points="0,42 30,30 60,10 80,6 100,14 112,30 140,34 116,40 104,52 84,64 60,70 40,62 26,52" fill="#0a1214"/>
+      <polygon points="60,10 80,6 100,14 84,24 64,22" fill="#182427"/>
+    </symbol>
+
+    <!-- Rune strokes -->
     <symbol id="ru-o" viewBox="0 0 24 32"><path d="M12 4l8 8-8 8-8-8z M6 18v12 M18 18v12"/></symbol>
-    <symbol id="ru-t" viewBox="0 0 24 32"><path d="M12 30V3 M4 9l8-6 8 6"/></symbol>
     <symbol id="ru-h" viewBox="0 0 24 32"><path d="M6 2v28 M18 2v28 M6 12l12 8"/></symbol>
-    <!-- knot divider tile -->
-    <pattern id="knot" width="40" height="16" patternUnits="userSpaceOnUse">
-      <path d="M0 8c8-10 12-10 20 0s12 10 20 0" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M0 8c8 10 12 10 20 0s12-10 20 0" fill="none" stroke="currentColor" stroke-width="1.6"/>
-    </pattern>
+    <symbol id="ru-t" viewBox="0 0 24 32"><path d="M12 30V3 M4 9l8-6 8 6"/></symbol>
+    <symbol id="ru-f" viewBox="0 0 24 32"><path d="M7 30V2 M7 7l11-4 M7 14l11-4"/></symbol>
+    <pattern id="chain" width="18" height="30" patternUnits="userSpaceOnUse"><ellipse cx="9" cy="15" rx="5" ry="12" fill="none" stroke="#3b4a4e" stroke-width="3"/></pattern>
   </defs>
 </svg>
 
-<aside class="rail" id="rail" aria-hidden="true">
-  <a href="#saga" data-r="saga"><svg><use href="#ru-f"/></svg></a>
-  <a href="#run" data-r="run"><svg><use href="#ru-u"/></svg></a>
-  <a href="#gods" data-r="gods"><svg><use href="#ru-th"/></svg></a>
-  <a href="#wall" data-r="wall"><svg><use href="#ru-a"/></svg></a>
-  <a href="#armor" data-r="armor"><svg><use href="#ru-r"/></svg></a>
-  <a href="#hall" data-r="hall"><svg><use href="#ru-k"/></svg></a>
-  <a href="#stone" data-r="stone"><svg><use href="#ru-g"/></svg></a>
-  <span class="rail-line"></span>
-</aside>
-
 <header class="top" id="top">
-  <a class="brand" href="#hero">Badassgard</a>
+  <a class="brand" href="#hero">BADASSGARD</a>
   <button class="burger" type="button" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav class="menu" id="menu">
-    <a href="#saga">서사</a><a href="#run">한 판</a><a href="#gods">축복</a><a href="#wall">방패벽</a><a href="#hall">전리품</a><a href="#stone">소식</a>
+    <a href="#route">출정 항로</a><a href="#temple">신들의 천장</a><a href="#vault">보물창고</a><a href="#court">아군 오사</a><a href="#forge">대장간</a><a href="#gate">출정문</a>
     <a class="btn btn-gold" href="https://store.steampowered.com/app/3415350/" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-steam"/></svg>위시리스트</a>
   </nav>
 </header>
 
 <section class="hero" id="hero">
-  <div class="frame">
-    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-    <img class="keyart" src="img/keyart-1920.jpg" alt="바이킹 네 명이 신전 앞에 서 있는 키아트" width="1920" height="620" fetchpriority="high">
-    <div class="hero-text">
-      <p class="over">THECOVE PRESENTS</p>
-      <h1 class="logotype">Badassgard</h1>
-      <p class="ko-title">배드애스가르드 <span>3인칭 로그라이트 액션 슈터</span></p>
-      <p class="quote">"바이킹이 쏜다, 그것도 샷건을?!"</p>
-    </div>
+  <div class="poly p1"></div><div class="poly p2"></div><div class="poly p3"></div><div class="poly p4"></div>
+  <svg class="shield s1" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield s2" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield s3" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield s4" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield s5" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield s6" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <div class="crossed" aria-hidden="true">
+    <svg class="axe a1" viewBox="0 0 420 120"><use href="#axe"/></svg>
+    <svg class="axe a2" viewBox="0 0 420 120"><use href="#axe"/></svg>
+    <svg class="gun g1" viewBox="0 0 420 110"><use href="#shotgun"/></svg>
+    <svg class="gun g2" viewBox="0 0 420 110"><use href="#shotgun"/></svg>
   </div>
-  <div class="hero-foot">
+  <div class="plate">
+    <span class="plate-top">THECOVE PRESENTS</span>
+    <h1 class="title">BADASSGARD</h1>
+    <p class="tag">신들의 축복. 바이킹의 화력.</p>
     <div class="cta">
       <a class="btn btn-gold big" href="https://store.steampowered.com/app/3415350/" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-steam"/></svg>Steam 위시리스트</a>
       <a class="btn btn-iron big" href="https://discord.gg/xqB3WnmH76" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-discord"/></svg>알파 테스트 신청</a>
     </div>
-    <ul class="marks">
-      <li>2027년 Steam 출시 예정</li><li>Windows</li><li>싱글 &middot; 최대 4인 온라인 협동</li><li>컨트롤러 완벽 지원</li>
-    </ul>
-    <ul class="honors" aria-label="수상">
-      <li><b>Top 50</b><span>GXG 2025 with Indiecraft</span></li>
-      <li><b>Sponsor Pick</b><span>BIC 2025</span></li>
-      <li><b>Top 3</b><span>Indiecraft 2025 PC / Console</span></li>
-    </ul>
   </div>
+  <picture class="warband">
+    <source srcset="img/warband.webp" type="image/webp">
+    <img src="img/warband.png" alt="샷건과 도끼를 든 바이킹 전투단 네 명" width="1320" height="620" fetchpriority="high">
+  </picture>
+  <span class="flash" aria-hidden="true"></span>
+  <div class="boss-video" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="media/clip2.poster.avif"><source src="media/clip2.webm" type="video/webm"><source src="media/clip2.mp4" type="video/mp4"></video>
+  </div>
+  <ul class="marks">
+    <li><b>2027</b>STEAM</li><li><b>4</b>PLAYER CO-OP</li><li><b>WIN</b>WINDOWS PC</li>
+  </ul>
 </section>
 
-<div class="divider" aria-hidden="true"><svg><rect width="100%" height="16" fill="url(#knot)"/></svg></div>
-
-<section class="chapter" id="saga">
+<section class="route" id="route">
+  <div class="poly p5"></div>
   <div class="wrap">
-    <header class="ch-head"><svg class="ch-rune"><use href="#ru-f"/></svg><div><span class="ch-no">제1장</span><h2>룬과 마법, 그리고 샷건</h2></div></header>
-    <div class="saga">
-      <div class="saga-text">
-        <p>배드애스가르드는 북유럽 신화 세계관에 화끈한 화력을 얹은 3인칭 로그라이트 액션 슈터입니다. 신들의 축복을 강화하고 오파츠를 조합해 몰려드는 적을 쓸어버리죠. 바이킹에게 샷건을 쥐여 줬으니, 조용히 끝날 리는 없습니다.</p>
-        <p>매번 새로 시작되는 전장에서 믿을 건 두 가지뿐입니다. 자기 피지컬, 그리고 이번 판에 만든 샷건 빌드. 잘 굴러가면 아슬아슬한 생존 싸움이 어느 순간 전장을 통째로 날려버리는 화력 쇼로 바뀝니다.</p>
-      </div>
-      <dl class="plaque">
-        <div><dt>장르</dt><dd>액션 로그라이트 &middot; 3인칭 슈터</dd></div>
-        <div><dt>인원</dt><dd>1인 또는 최대 4인 온라인 협동</dd></div>
-        <div><dt>개발</dt><dd>THECOVE</dd></div>
-        <div><dt>플랫폼</dt><dd>Steam (Windows)</dd></div>
-        <div><dt>출시</dt><dd>2027년 예정</dd></div>
-      </dl>
-    </div>
-    <figure class="carved">
-      <img src="img/ss4-1600.jpg" alt="샷건을 든 바이킹 클로즈업" width="1600" height="900" loading="lazy">
-      <figcaption>이 세계에서 샷건은 신성한 도구입니다.</figcaption>
-    </figure>
+    <header class="sec-head"><span class="roman">I</span><h2>출정 항로</h2><p>전장에 들어설 때마다 빌드는 처음부터 다시 쌓습니다. 잘 풀렸든 화끈하게 터졌든, 다음 판에는 또 다른 조합이 기다리죠.</p></header>
   </div>
-</section>
-
-<div class="divider" aria-hidden="true"><svg><rect width="100%" height="16" fill="url(#knot)"/></svg></div>
-
-<section class="chapter" id="run">
-  <div class="wrap">
-    <header class="ch-head"><svg class="ch-rune"><use href="#ru-u"/></svg><div><span class="ch-no">제2장</span><h2>한 판은 이렇게 굴러갑니다</h2></div></header>
-    <p class="ch-lead">전장에 들어설 때마다 빌드는 처음부터 다시 쌓습니다. 잘 풀렸든 화끈하게 터졌든, 다음 판에는 또 다른 조합이 기다리죠.</p>
-    <ol class="steps">
-      <li><span class="step-rune"><svg><use href="#ru-f"/></svg></span><div class="carved sm"><img src="img/ss5-800.jpg" alt="신에게 축복을 받는 화면" width="800" height="450" loading="lazy"></div><h3>축복을 고릅니다</h3><p>오딘, 토르, 티르, 프레이야. 어느 신의 축복을 강화할지가 이번 판의 방향을 정합니다.</p></li>
-      <li><span class="step-rune"><svg><use href="#ru-u"/></svg></span><div class="carved sm"><img src="img/ss3-800.jpg" alt="유물 오파츠 선택 화면" width="800" height="450" loading="lazy"></div><h3>오파츠를 줍습니다</h3><p>맵 곳곳에 숨어 있는 정체 모를 유물 '오파츠'. 무엇을 조합하느냐에 따라 같은 샷건이 전혀 다른 물건이 됩니다.</p></li>
-      <li><span class="step-rune"><svg><use href="#ru-th"/></svg></span><div class="carved sm"><img src="img/ss6-800.jpg" alt="날아가는 톱날과 화염" width="800" height="450" loading="lazy"></div><h3>샷건 이상의 샷건이 됩니다</h3><p>신들의 축복을 강화하고 오파츠를 조합해 화력을 끌어올립니다. 이쯤 되면 방아쇠 한 번에 화면이 뒤집힙니다.</p></li>
-      <li><span class="step-rune"><svg><use href="#ru-a"/></svg></span><div class="carved sm"><img src="img/ss1-800.jpg" alt="대폭발 장면" width="800" height="450" loading="lazy"></div><h3>그리고 판이 터집니다</h3><p>보스를 잡고 다음 구역으로 가거나, 동료의 실수로 대폭발이 나거나. 어느 쪽이든 이 게임답습니다.</p></li>
+  <div class="route-map">
+    <svg class="rope" viewBox="0 0 1000 1500" preserveAspectRatio="none" aria-hidden="true">
+      <path class="rope-bg" d="M500 0 C500 140 220 180 220 330 S780 480 780 640 S220 800 220 960 S780 1120 780 1280 S500 1400 500 1500"/>
+      <path class="rope-fg" id="ropeFg" d="M500 0 C500 140 220 180 220 330 S780 480 780 640 S220 800 220 960 S780 1120 780 1280 S500 1400 500 1500"/>
+    </svg>
+    <ol class="waypoints">
+      <li class="wp wp-1"><div class="win round"><img src="img/ss5-800.jpg" alt="신에게 축복을 받는 화면" width="800" height="450" loading="lazy"></div><div class="wp-text"><span class="lbl">LANDING</span><h3>상륙. 축복을 고릅니다</h3><p>오딘, 토르, 티르, 프레이야. 어느 신의 축복을 강화할지가 이번 판의 방향을 정합니다.</p></div></li>
+      <li class="wp wp-2"><div class="win sail"><img src="img/ss3-800.jpg" alt="유물 오파츠 선택 화면" width="800" height="450" loading="lazy"></div><div class="wp-text"><span class="lbl">LOOT</span><h3>약탈. 오파츠를 줍습니다</h3><p>맵 곳곳에 숨어 있는 정체 모를 유물 '오파츠'. 무엇을 조합하느냐에 따라 같은 샷건이 전혀 다른 물건이 됩니다.</p></div></li>
+      <li class="wp wp-3"><div class="win round"><video autoplay muted loop playsinline preload="metadata" poster="media/clip3.poster.avif"><source src="media/clip3.webm" type="video/webm"><source src="media/clip3.mp4" type="video/mp4"></video></div><div class="wp-text"><span class="lbl">FIRE</span><h3>사격. 샷건 이상의 샷건이 됩니다</h3><p>신들의 축복을 강화하고 오파츠를 조합해 화력을 끌어올립니다. 이쯤 되면 방아쇠 한 번에 화면이 뒤집힙니다.</p></div></li>
+      <li class="wp wp-4"><div class="win sail"><img src="img/ss1-800.jpg" alt="대폭발 장면" width="800" height="450" loading="lazy"></div><div class="wp-text"><span class="lbl">FALL</span><h3>죽음. 그리고 판이 터집니다</h3><p>보스를 잡고 다음 구역으로 가거나, 동료의 실수로 대폭발이 나거나. 어느 쪽이든 이 게임답습니다.</p></div></li>
+      <li class="wp wp-5"><div class="win round"><video autoplay muted loop playsinline preload="metadata" poster="media/clip1.poster.avif"><source src="media/clip1.webm" type="video/webm"><source src="media/clip1.mp4" type="video/mp4"></video></div><div class="wp-text"><span class="lbl">RAID AGAIN</span><h3>재출정</h3><p>매번 새로 시작되는 전장에서 믿을 건 두 가지뿐입니다. 자기 피지컬, 그리고 이번 판에 만든 샷건 빌드.</p></div></li>
     </ol>
   </div>
 </section>
 
-<div class="divider" aria-hidden="true"><svg><rect width="100%" height="16" fill="url(#knot)"/></svg></div>
-
-<section class="chapter gods" id="gods">
+<section class="temple" id="temple">
+  <img class="temple-floor" src="img/ss2-1600.jpg" alt="" width="1600" height="900" loading="lazy">
   <div class="wrap">
-    <header class="ch-head"><svg class="ch-rune"><use href="#ru-th"/></svg><div><span class="ch-no">제3장</span><h2>신들의 축복, 그리고 오파츠</h2></div></header>
-    <ul class="shields">
-      <li><span class="shield"><svg><use href="#ru-o"/></svg></span><b>오딘</b></li>
-      <li><span class="shield"><svg><use href="#ru-h"/></svg></span><b>토르</b></li>
-      <li><span class="shield"><svg><use href="#ru-t"/></svg></span><b>티르</b></li>
-      <li><span class="shield"><svg><use href="#ru-w"/></svg></span><b>프레이야</b></li>
+    <header class="sec-head light"><span class="roman">II</span><h2>신들의 천장</h2><p>신마다 결이 다른 축복과, 어디서 무엇이 나올지 모르는 오파츠. 둘을 어떻게 엮느냐가 곧 이번 판의 빌드입니다.</p></header>
+    <ul class="pillars">
+      <li><span class="cap"></span><span class="shaft"><svg class="rune"><use href="#ru-o"/></svg><em>ODIN</em><b>오딘</b></span><span class="base"></span></li>
+      <li><span class="cap"></span><span class="shaft"><svg class="rune"><use href="#ru-h"/></svg><em>THOR</em><b>토르</b></span><span class="base"></span></li>
+      <li><span class="cap"></span><span class="shaft"><svg class="rune"><use href="#ru-t"/></svg><em>TYR</em><b>티르</b></span><span class="base"></span></li>
+      <li><span class="cap"></span><span class="shaft"><svg class="rune"><use href="#ru-f"/></svg><em>FREYJA</em><b>프레이야</b></span><span class="base"></span></li>
     </ul>
-    <div class="gods-body">
-      <p>신마다 결이 다른 축복과, 어디서 무엇이 나올지 모르는 오파츠. 둘을 어떻게 엮느냐가 곧 이번 판의 빌드입니다. 축복을 강화하고 오파츠를 조합해 샷건의 성질을 바꿔 보세요.</p>
-      <figure class="carved">
-        <img src="img/ss2-1600.jpg" alt="색색의 광선이 쏟아지는 전투" width="1600" height="900" loading="lazy">
-        <figcaption>축복은 신전에서, 오파츠는 전장 어딘가에서.</figcaption>
-      </figure>
+    <p class="temple-note">축복을 강화하고 오파츠를 조합해 샷건의 성질을 바꿔 보세요.</p>
+  </div>
+</section>
+
+<section class="vault" id="vault">
+  <div class="poly p6"></div>
+  <div class="wrap vault-in">
+    <div class="vault-text">
+      <header class="sec-head"><span class="roman">III</span><h2>오파츠 보물창고</h2></header>
+      <p>맵 곳곳에 숨어 있는 정체 모를 유물, 오파츠. 무엇을 조합하느냐에 따라 같은 샷건이 전혀 다른 물건이 됩니다. 축복과 오파츠가 맞물리면 아슬아슬한 생존 싸움이 어느 순간 전장을 통째로 날려버리는 화력 쇼로 바뀝니다.</p>
+    </div>
+    <div class="vault-door">
+      <svg class="chains c1" aria-hidden="true"><rect width="100%" height="100%" fill="url(#chain)"/></svg>
+      <svg class="chains c2" aria-hidden="true"><rect width="100%" height="100%" fill="url(#chain)"/></svg>
+      <div class="door"><img src="img/ss3-1600.jpg" alt="세 가지 오파츠 중 하나를 고르는 화면" width="1600" height="900" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<section class="wall" id="wall">
-  <img class="wall-bg" src="img/ss8-1600.jpg" alt="" width="1600" height="900" loading="lazy">
-  <div class="wrap wall-in">
-    <header class="ch-head light"><svg class="ch-rune"><use href="#ru-a"/></svg><div><span class="ch-no">제4장</span><h2>방패벽. 친구인가, 적인가</h2></div></header>
-    <div class="wall-text">
+<section class="court" id="court">
+  <svg class="shield side-l" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <svg class="shield side-r" viewBox="0 0 200 200" aria-hidden="true"><use href="#shield"/></svg>
+  <div class="wrap court-in">
+    <header class="sec-head light"><span class="roman">IV</span><h2>아군 오사 재판장</h2></header>
+    <div class="court-band">
+      <img src="img/ss8-1600.jpg" alt="적 무리 속 폭발" width="1600" height="900" loading="lazy">
+      <div class="court-clip"><video autoplay muted loop playsinline preload="metadata" poster="media/clip4.poster.avif"><source src="media/clip4.webm" type="video/webm"><source src="media/clip4.mp4" type="video/mp4"></video></div>
+    </div>
+    <div class="court-text">
       <p>혼자 밀어붙여도 되고, 최대 네 명이 함께 적 떼와 거대한 보스를 사냥해도 됩니다. 축복과 오파츠가 맞물리면 엄청난 화력이 나오죠. 물론 동료 한 명의 실수로 그 화력이 아군에게 돌아오는 순간도 이 게임의 맛입니다.</p>
       <p>아군 오사와 애먼 피해는 각오해야 합니다. 등 뒤의 친구가 든든한 아군인지, 사고를 몰고 다니는 적인지도 판이 끝나 봐야 알죠.</p>
       <p class="note">협동 플레이는 현재 알파 테스트와 데모 버전에서 지원되지 않습니다. 협동 테스트 일정은 확정되는 대로 Steam과 Discord에 공지됩니다.</p>
@@ -163,74 +206,54 @@
   </div>
 </section>
 
-<section class="chapter" id="armor">
-  <div class="wrap armor-in">
-    <div>
-      <header class="ch-head"><svg class="ch-rune"><use href="#ru-r"/></svg><div><span class="ch-no">제5장</span><h2>전사의 차림</h2></div></header>
-      <p>샷건을 든 바이킹이라면 차림새도 평범할 수 없죠. 갑옷과 투구, 망토를 조합해 전장에서도 단번에 알아볼 수 있는 바이킹으로 꾸며 보세요.</p>
-      <p class="dim">전투 사이에는 이런 곳도 들르게 됩니다. 곰 요리사가 주방을 지키는 세계입니다.</p>
-    </div>
-    <figure class="carved"><img src="img/ss7-1600.jpg" alt="주방에서 요리하는 거대한 곰 상인" width="1600" height="900" loading="lazy"></figure>
-  </div>
-</section>
-
-<div class="divider" aria-hidden="true"><svg><rect width="100%" height="16" fill="url(#knot)"/></svg></div>
-
-<section class="chapter" id="hall">
+<section class="forge" id="forge">
   <div class="wrap">
-    <header class="ch-head"><svg class="ch-rune"><use href="#ru-k"/></svg><div><span class="ch-no">제6장</span><h2>전리품</h2></div></header>
-    <div class="clips">
-      <div class="carved sm"><video autoplay muted loop playsinline preload="metadata" poster="media/clip1.poster.avif"><source src="media/clip1.webm" type="video/webm"><source src="media/clip1.mp4" type="video/mp4"></video></div>
-      <div class="carved sm"><video autoplay muted loop playsinline preload="metadata" poster="media/clip2.poster.avif"><source src="media/clip2.webm" type="video/webm"><source src="media/clip2.mp4" type="video/mp4"></video></div>
-      <div class="carved sm"><video autoplay muted loop playsinline preload="metadata" poster="media/clip3.poster.avif"><source src="media/clip3.webm" type="video/webm"><source src="media/clip3.mp4" type="video/mp4"></video></div>
-      <div class="carved sm"><video autoplay muted loop playsinline preload="metadata" poster="media/clip4.poster.avif"><source src="media/clip4.webm" type="video/webm"><source src="media/clip4.mp4" type="video/mp4"></video></div>
-    </div>
-    <div class="grid" id="grid">
-      <a href="img/ss1-1600.jpg" data-cap="화력 쇼"><img src="img/ss1-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss2-1600.jpg" data-cap="광선이 쏟아지는 전장"><img src="img/ss2-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss3-1600.jpg" data-cap="오파츠 선택"><img src="img/ss3-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss4-1600.jpg" data-cap="샷건과 바이킹"><img src="img/ss4-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss5-1600.jpg" data-cap="신들의 축복"><img src="img/ss5-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss6-1600.jpg" data-cap="톱날과 불꽃"><img src="img/ss6-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss7-1600.jpg" data-cap="곰 요리사의 주방"><img src="img/ss7-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss8-1600.jpg" data-cap="적 무리와 폭발"><img src="img/ss8-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
-      <a href="img/ss9-1600.jpg" data-cap="번개 스킬"><img src="img/ss9-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <header class="sec-head"><span class="roman">V</span><h2>대장간 방패열</h2><p>샷건을 든 바이킹이라면 차림새도 평범할 수 없죠. 갑옷과 투구, 망토를 조합해 전장에서도 단번에 알아볼 수 있는 바이킹으로 꾸며 보세요.</p></header>
+    <div class="rack" id="grid">
+      <a class="mount round" href="img/ss4-1600.jpg" data-cap="샷건과 바이킹"><img src="img/ss4-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount plate-w" href="img/ss7-1600.jpg" data-cap="곰 요리사의 주방"><img src="img/ss7-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount round" href="img/ss9-1600.jpg" data-cap="번개 스킬"><img src="img/ss9-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount plate-w" href="img/ss6-1600.jpg" data-cap="톱날과 불꽃"><img src="img/ss6-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount round" href="img/ss2-1600.jpg" data-cap="광선이 쏟아지는 전장"><img src="img/ss2-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount plate-w" href="img/ss1-1600.jpg" data-cap="화력 쇼"><img src="img/ss1-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount round" href="img/ss5-1600.jpg" data-cap="신들의 축복"><img src="img/ss5-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount plate-w" href="img/ss8-1600.jpg" data-cap="적 무리와 폭발"><img src="img/ss8-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
+      <a class="mount round" href="img/ss3-1600.jpg" data-cap="오파츠 선택"><img src="img/ss3-800.jpg" alt="" width="800" height="450" loading="lazy"></a>
     </div>
     <p class="trailer-line"><a class="btn btn-iron" href="https://store.steampowered.com/app/3415350/" target="_blank" rel="noopener">Steam에서 트레일러 보기</a><span>게임플레이 트레일러 전편은 Steam 상점 페이지에 있습니다.</span></p>
   </div>
 </section>
 
-<div class="divider" aria-hidden="true"><svg><rect width="100%" height="16" fill="url(#knot)"/></svg></div>
-
-<section class="chapter" id="stone">
-  <div class="wrap stone-in">
-    <header class="ch-head"><svg class="ch-rune"><use href="#ru-g"/></svg><div><span class="ch-no">제7장</span><h2>비석에 새긴 소식</h2></div></header>
-    <ul class="runestone">
-      <li><a href="https://store.steampowered.com/news/app/3415350/view/1842846814442231" target="_blank" rel="noopener"><time>2026.09.03</time><b>2차 클로즈드 알파 테스트 자주 묻는 질문</b></a></li>
-      <li><a href="https://store.steampowered.com/news/app/3415350/view/1842846814441870" target="_blank" rel="noopener"><time>2026.09.03</time><b>클로즈드 알파 #2 핫픽스 패치 1 (Build 0.25)</b></a></li>
-      <li><a href="https://store.steampowered.com/news/app/3415350/view/1842212951311883" target="_blank" rel="noopener"><time>2026.09.01</time><b>2차 클로즈드 알파 테스트 시작</b></a></li>
-      <li><a href="https://store.steampowered.com/news/app/3415350/view/1839676055893935" target="_blank" rel="noopener"><time>2026.08.03</time><b>BIC 2026 출전, 다음은 게임스컴</b></a></li>
-    </ul>
-    <a class="more" href="https://store.steampowered.com/news/app/3415350" target="_blank" rel="noopener">Steam 공지 전체 보기</a>
-  </div>
-</section>
-
-<section class="valhalla">
-  <div class="wrap valhalla-in">
-    <p class="over">CLOSED ALPHA TEST</p>
-    <h2>전사를 모집합니다</h2>
-    <p>클로즈드 알파 테스트 참가 신청은 Discord에서 받습니다. 테스트 일정, 참가 보상, 커뮤니티 이벤트가 Discord에 가장 먼저 올라옵니다.</p>
-    <a class="btn btn-gold big" href="https://discord.gg/xqB3WnmH76" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-discord"/></svg>Discord 참여</a>
-    <div class="social">
-      <a href="https://x.com/BadassgardGame" target="_blank" rel="noopener">X</a>
-      <a href="https://www.instagram.com/badassgardgame/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@badassgard" target="_blank" rel="noopener">TikTok</a>
+<section class="gate" id="gate">
+  <div class="ticker" aria-label="최근 소식">
+    <svg class="raven" viewBox="0 0 140 80" aria-hidden="true"><use href="#raven"/></svg>
+    <div class="ticker-track">
+      <a href="https://store.steampowered.com/news/app/3415350/view/1842846814442231" target="_blank" rel="noopener"><time>2026.09.03</time>2차 클로즈드 알파 테스트 자주 묻는 질문</a>
+      <a href="https://store.steampowered.com/news/app/3415350/view/1842846814441870" target="_blank" rel="noopener"><time>2026.09.03</time>클로즈드 알파 #2 핫픽스 패치 1 (Build 0.25)</a>
+      <a href="https://store.steampowered.com/news/app/3415350/view/1842212951311883" target="_blank" rel="noopener"><time>2026.09.01</time>2차 클로즈드 알파 테스트 시작</a>
+      <a href="https://store.steampowered.com/news/app/3415350/view/1839676055893935" target="_blank" rel="noopener"><time>2026.08.03</time>BIC 2026 출전, 다음은 게임스컴</a>
+      <a href="https://store.steampowered.com/news/app/3415350" target="_blank" rel="noopener" class="all">Steam 공지 전체 보기</a>
     </div>
   </div>
-</section>
-
-<section class="spec">
-  <div class="wrap">
+  <div class="gate-arch">
+    <div class="gdoor gdoor-l"></div><div class="gdoor gdoor-r"></div>
+    <div class="gate-in">
+      <span class="roman">VI</span>
+      <h2>발할라 출정문</h2>
+      <p class="gate-year"><b>2027</b><span>STEAM</span></p>
+      <p>클로즈드 알파 테스트 참가 신청은 Discord에서 받습니다. 테스트 일정, 참가 보상, 커뮤니티 이벤트가 Discord에 가장 먼저 올라옵니다.</p>
+      <div class="cta">
+        <a class="btn btn-gold big" href="https://store.steampowered.com/app/3415350/" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-steam"/></svg>Steam 위시리스트</a>
+        <a class="btn btn-iron big" href="https://discord.gg/xqB3WnmH76" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-discord"/></svg>Discord 참여</a>
+      </div>
+      <div class="social">
+        <a href="https://x.com/BadassgardGame" target="_blank" rel="noopener">X</a>
+        <a href="https://www.instagram.com/badassgardgame/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@badassgard" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap spec">
     <dl>
       <div><dt>출시</dt><dd>2027년 예정</dd></div>
       <div><dt>플랫폼</dt><dd>Steam (Windows 10 이상, 64비트)</dd></div>
@@ -238,13 +261,15 @@
       <div><dt>조작</dt><dd>키보드·마우스, 컨트롤러 완벽 지원 (DualShock &middot; DualSense)</dd></div>
       <div><dt>언어</dt><dd>한국어, 영어(음성 지원), 중국어 간체·번체, 독일어</dd></div>
       <div><dt>최소 사양</dt><dd>Intel Core i5 &middot; 16 GB RAM &middot; GTX 1060 &middot; DirectX 11 &middot; 5 GB</dd></div>
+      <div><dt>개발</dt><dd>THECOVE</dd></div>
+      <div><dt>장르</dt><dd>액션 로그라이트 &middot; 3인칭 슈터</dd></div>
     </dl>
   </div>
 </section>
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <span class="brand">Badassgard</span>
+    <span class="brand">BADASSGARD</span>
     <nav class="foot-links">
       <a href="https://store.steampowered.com/app/3415350/" target="_blank" rel="noopener">Steam</a>
       <a href="https://discord.gg/xqB3WnmH76" target="_blank" rel="noopener">Discord</a>

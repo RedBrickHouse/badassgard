@@ -4,13 +4,19 @@
   onScroll(); addEventListener('scroll',onScroll,{passive:true});
   burger.addEventListener('click',function(){var open=top.classList.toggle('open');burger.setAttribute('aria-expanded',open);});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
-  var rail=document.getElementById('rail');
-  if(rail && 'IntersectionObserver' in window){
-    var links=rail.querySelectorAll('[data-r]'), map={};
-    links.forEach(function(a){var s=document.getElementById(a.dataset.r); if(s) map[a.dataset.r]=a;});
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.remove('on')}); var a=map[x.target.id]; if(a) a.classList.add('on');}});},{rootMargin:'-35% 0px -55% 0px'});
-    Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});
-  }
+})();
+(function(){
+  // rope progress follows scroll through the route section; ends at 100%, no perpetual motion
+  var fg=document.getElementById('ropeFg'), map=document.querySelector('.route-map'); if(!fg||!map) return;
+  var len=fg.getTotalLength(); fg.style.strokeDasharray=len; fg.style.strokeDashoffset=len;
+  function upd(){var r=map.getBoundingClientRect(); var vh=innerHeight; var p=(vh*0.7-r.top)/(r.height); p=Math.max(0,Math.min(1,p)); fg.style.strokeDashoffset=len*(1-p);}
+  upd(); addEventListener('scroll',upd,{passive:true}); addEventListener('resize',function(){len=fg.getTotalLength();fg.style.strokeDasharray=len;upd();});
+})();
+(function(){
+  var g=document.querySelector('.gate-arch'); if(!g) return;
+  if(!('IntersectionObserver' in window)){g.classList.add('open');return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){g.classList.add('open');io.disconnect();}})},{threshold:.35});
+  io.observe(g); setTimeout(function(){g.classList.add('open');},6000);
 })();
 (function(){
   var lb=document.getElementById('lightbox'), img=lb.querySelector('img'), cap=lb.querySelector('figcaption');
