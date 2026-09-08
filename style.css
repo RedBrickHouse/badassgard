@@ -286,3 +286,12 @@ p{margin:0 0 14px}
   .foot-links{margin-left:0;flex-wrap:wrap}
 }
 @media (max-width:560px){.rack{grid-template-columns:1fr}.spec dl{grid-template-columns:1fr}.pillars{gap:12px}.shaft b{font-size:20px}}
+
+/* language switch */
+.lang-switch{display:inline-flex;border:1px solid rgba(214,163,62,.45);clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px)}
+.lang-btn{font-family:var(--num);font-weight:700;font-size:12px;letter-spacing:.14em;padding:7px 10px;background:rgba(6,21,23,.6);border:0;color:var(--bone2);cursor:pointer;transition:.2s}
+.lang-btn+.lang-btn{border-left:1px solid rgba(214,163,62,.3)}
+.lang-btn:hover{color:var(--gold2)}
+.lang-btn.active{background:var(--gold);color:#1b1408}
+html:lang(zh-Hans){--ko:"Noto Sans SC","Black Han Sans",sans-serif;--sans:"Noto Sans SC","Noto Sans KR",sans-serif}
+html:lang(zh-Hans) .sec-head h2,html:lang(zh-Hans) .wp h3,html:lang(zh-Hans) .gate-in h2{font-weight:900}
