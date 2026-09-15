@@ -210,7 +210,7 @@ p{margin:0 0 14px}
 .foot-cis{display:flex;align-items:center;gap:18px}
 .p-logo{height:40px;width:auto}
 .p-sep{width:1px;height:56px;background:rgba(229,217,191,.3)}
-.p-dev-logo{height:48px;width:auto;border-radius:6px}
+.p-dev-logo{height:48px;width:auto}
 @media (max-width:600px){.foot-cis{gap:14px}.p-logo{height:32px}.p-dev-logo{height:40px}}
 .foot-in{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
 .foot-links{display:flex;gap:18px;font-size:14px;color:var(--bone2);margin-left:auto}
